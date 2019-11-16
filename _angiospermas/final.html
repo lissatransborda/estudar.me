@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estudar.me</title>
+    <link rel="stylesheet" href="../_css/style.css">
+    <link rel="stylesheet" href="cssindex.css">
+    <script src="../_javascript/functions.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <script>
+        var win = parseInt(querystring("win"))
+        if (win / 1038 - 353<=10 && win / 1038 - 353>=0 && Number.isInteger(win)){
+            win = win/1038 - 353
+        }
+        else{
+            win = 0
+            window.location.replace("../trapaceiro.html")
+        }
+        function printResults(win){
+            document.write('Você acertou '+ win + ' perguntas de 5')
+            if (win == 5){
+                document.write('<br>Você foi muito bem, nada a melhorar por enquanto')
+            }
+            if (win == 4){
+                document.write('<br>Você quase acertou todas as perguntas, muito bem!')
+            }
+            if (win == 3){
+                document.write('<br>Você errou apenas duas, procure estudar um pouco mais para melhorar!')}
+            if (win == 2){
+                document.write('<br>Você acertou apenas duas, estude mais para ir melhor na próxima.')}
+            if (win == 1){
+                document.write('<br>Você acertou só 1, estude muito mais, você vai precisar na prova.')}
+            if (win == 0){
+                document.write('<br>Você errou todas, temos um sério problema, estude muito mais, vocẽ vai precisar.')}
+        }
+    </script>
+    <div class="content">
+        <h1>Resultados:</h1>
+        <h2><script>printResults(win)</script></h2>
+        <input type="button" value="Continuar" class="start" onclick="redirect('../premium.html')">
+    <h2>Links de apoio:
+        <br><a href="https://www.todabiologia.com/botanica/pseudofrutos.htm" class="link">TodaBiologia</a>
+        <br><a href="https://brasilescola.uol.com.br/biologia/angiospermas.htm" class="link">BrasilEscola</a>
+        <br><a href="https://www.sobiologia.com.br/conteudos/Reinos4/angiospermas.php" class="link">SóBiologia</a>
+    </h2>
+    
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

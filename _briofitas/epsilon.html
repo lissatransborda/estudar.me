@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estudar.me</title>
+    <link rel="stylesheet" href="../_css/style.css">
+    <link rel="stylesheet" href="cssindex.css">
+    <script src="../_javascript/functions.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <script>
+        var win = parseInt(querystring("win"))
+        if (win / 1038 - 353<=10 && win / 1038 - 353>=0 && Number.isInteger(win / 1038 - 353)){
+            win = win/1038 - 353
+        }
+        else{
+            win = 0
+            window.location.replace("../trapaceiro.html")
+        }
+    </script>
+    <div class="content">
+        <h1>Como as briófitas podem ajudar os seres humanos?</h1>
+        <input type="button" value="Ajuda como combustível para fogueiras" class="choice" id='1' onclick="govariable('final.html','win',`${(win + 353) * 1038}`,'1','4')">
+        <input type="button" value="Serve para aquecimento corporal" class="choice" id='2' onclick="govariable('final.html','win',`${(win + 353) * 1038}`,'2','4')">
+        <input type="button" value="Pode ser usada para colar objetos em paredes" class="choice" id='3' onclick="govariable('final.html','win',`${(win + 353) * 1038}`,'3','4')">
+        <input type="button" value="É importante para o ciclo do carbono" class="choice" id='4' onclick="govariable('final.html','win',`${(win + 354) * 1038}`,'4','4')">
+    
+    
+    </div>
+</head>
+<body>
+    
+</body>
+</html>
