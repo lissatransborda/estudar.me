@@ -9,10 +9,11 @@ function govariable(page,variable,valor,id,idcorrect) {
     document.getElementById(idcorrect).style.backgroundColor = 'green'
     for (c=1;c<=4;c++){
         if (c==id || c==idcorrect){
-            console.log(c)
+            null
         }
         else{
             document.getElementById(`${c}`).style.backgroundColor = 'red'
+            document.getElementById(`${c}`).style.transform = 'scale(1)'
         }
     }
     setTimeout(function() {
