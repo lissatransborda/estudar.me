@@ -5,8 +5,10 @@ function redirect(url){
 function govariable(page,variable,valor,id,idcorrect) {
     document.getElementById(id).style.backgroundColor = 'red'
     document.getElementById(id).style.transform = 'scale(1)'
+    document.getElementById(id).style.borderColor = 'rgba(0,0,0,0.4)'
     document.getElementById(idcorrect).style.transform = 'scale(1.5)'
     document.getElementById(idcorrect).style.backgroundColor = 'green'
+    document.getElementById(idcorrect).style.borderColor = 'yellow'
     for (c=1;c<=4;c++){
         if (c==id || c==idcorrect){
             null
@@ -14,6 +16,7 @@ function govariable(page,variable,valor,id,idcorrect) {
         else{
             document.getElementById(`${c}`).style.backgroundColor = 'red'
             document.getElementById(`${c}`).style.transform = 'scale(1)'
+            document.getElementById(`${c}`).style.borderColor = 'rgba(0,0,0,0.4)'
         }
     }
     setTimeout(function() {
