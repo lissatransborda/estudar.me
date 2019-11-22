@@ -27,6 +27,7 @@ div.content{
 input.start{
     background-color:#41DE2C;
     border-radius: 20px;
+    border-style: solid;
     margin-top: 100px;
     margin-bottom: 20px;
     cursor: pointer;
